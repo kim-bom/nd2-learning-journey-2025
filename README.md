@@ -2,7 +2,7 @@
 
 ## October 4
 
--   System connection diagram ![Connection System Diagram](Diagram chart.png)
+-   System connection diagram ![Diagram chart.png](https://github.com/kim-bom/nd2-learning-journey-2025/blob/main/Diagram%20chart.png)
     
 -   In an industrial context, a **Gateway** refers to a **microcontroller**
     
