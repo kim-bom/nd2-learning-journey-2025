@@ -1,0 +1,178 @@
+<svg viewBox="0 0 1400 900" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Gradients -->
+    <linearGradient id="blueGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#667eea;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#764ba2;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="greenGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#56ab2f;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#a8e063;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="orangeGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#f093fb;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#f5576c;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="purpleGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#4facfe;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#00f2fe;stop-opacity:1" />
+    </linearGradient>
+    
+    <!-- Shadow filter -->
+    <filter id="shadow" x="-50%" y="-50%" width="200%" height="200%">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="1400" height="900" fill="#f8f9fa"/>
+  
+  <!-- Title -->
+  <text x="700" y="40" font-family="Arial, sans-serif" font-size="28" font-weight="bold" fill="#2c3e50" text-anchor="middle">IoT System Architecture</text>
+  
+  <!-- Layer Labels -->
+  <text x="30" y="120" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#34495e">Host Machine</text>
+  <text x="30" y="270" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#34495e">Access Layer</text>
+  <text x="30" y="420" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#34495e">Application Layer</text>
+  <text x="30" y="570" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#34495e">Messaging Layer</text>
+  <text x="30" y="720" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#34495e">Data Layer</text>
+  
+  <!-- Host Machine Layer -->
+  <rect x="200" y="80" width="1000" height="100" rx="10" fill="#e8f4f8" stroke="#3498db" stroke-width="2" opacity="0.3"/>
+  
+  <!-- Python Scripts -->
+  <rect x="230" y="100" width="200" height="60" rx="8" fill="url(#blueGrad)" filter="url(#shadow)"/>
+  <text x="330" y="125" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">Python Scripts</text>
+  <text x="330" y="145" font-family="Arial, sans-serif" font-size="12" fill="white" text-anchor="middle">Student Code</text>
+  
+  <!-- Web Browser -->
+  <rect x="970" y="100" width="200" height="60" rx="8" fill="url(#blueGrad)" filter="url(#shadow)"/>
+  <text x="1070" y="125" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">Web Browser</text>
+  <text x="1070" y="145" font-family="Arial, sans-serif" font-size="12" fill="white" text-anchor="middle">User Interface</text>
+  
+  <!-- Docker Network -->
+  <rect x="200" y="200" width="1000" height="520" rx="10" fill="#fff5e6" stroke="#f39c12" stroke-width="2" stroke-dasharray="5,5" opacity="0.5"/>
+  <text x="700" y="225" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#e67e22" text-anchor="middle">Docker Network: iot-network</text>
+  
+  <!-- Access Layer -->
+  <rect x="220" y="250" width="960" height="100" rx="10" fill="#e8f5e9" stroke="#27ae60" stroke-width="2" opacity="0.3"/>
+  
+  <!-- Nginx Reverse Proxy -->
+  <rect x="530" y="270" width="340" height="60" rx="8" fill="url(#greenGrad)" filter="url(#shadow)"/>
+  <text x="700" y="295" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">Nginx - Port 8888</text>
+  <text x="700" y="315" font-family="Arial, sans-serif" font-size="12" fill="white" text-anchor="middle">Reverse Proxy</text>
+  
+  <!-- Application Layer -->
+  <rect x="220" y="380" width="960" height="140" rx="10" fill="#fce4ec" stroke="#e91e63" stroke-width="2" opacity="0.3"/>
+  
+  <!-- IoT Simulator -->
+  <rect x="240" y="400" width="220" height="60" rx="8" fill="url(#orangeGrad)" filter="url(#shadow)"/>
+  <text x="350" y="423" font-family="Arial, sans-serif" font-size="13" font-weight="bold" fill="white" text-anchor="middle">IoT Simulator</text>
+  <text x="350" y="443" font-family="Arial, sans-serif" font-size="11" fill="white" text-anchor="middle">Data Generator</text>
+  
+  <!-- Node-RED -->
+  <rect x="490" y="400" width="220" height="60" rx="8" fill="url(#orangeGrad)" filter="url(#shadow)"/>
+  <text x="600" y="420" font-family="Arial, sans-serif" font-size="13" font-weight="bold" fill="white" text-anchor="middle">Node-RED</text>
+  <text x="600" y="436" font-family="Arial, sans-serif" font-size="11" fill="white" text-anchor="middle">Port 1880</text>
+  <text x="600" y="452" font-family="Arial, sans-serif" font-size="11" fill="white" text-anchor="middle">FlowFuse Dashboard</text>
+  
+  <!-- Flask API -->
+  <rect x="740" y="400" width="220" height="60" rx="8" fill="url(#orangeGrad)" filter="url(#shadow)"/>
+  <text x="850" y="420" font-family="Arial, sans-serif" font-size="13" font-weight="bold" fill="white" text-anchor="middle">Flask API</text>
+  <text x="850" y="436" font-family="Arial, sans-serif" font-size="11" fill="white" text-anchor="middle">Port 5000</text>
+  <text x="850" y="452" font-family="Arial, sans-serif" font-size="11" fill="white" text-anchor="middle">REST Endpoints</text>
+  
+  <!-- Grafana -->
+  <rect x="990" y="400" width="180" height="60" rx="8" fill="url(#orangeGrad)" filter="url(#shadow)"/>
+  <text x="1080" y="420" font-family="Arial, sans-serif" font-size="13" font-weight="bold" fill="white" text-anchor="middle">Grafana</text>
+  <text x="1080" y="436" font-family="Arial, sans-serif" font-size="11" fill="white" text-anchor="middle">Port 3000</text>
+  <text x="1080" y="452" font-family="Arial, sans-serif" font-size="11" fill="white" text-anchor="middle">Dashboards</text>
+  
+  <!-- Messaging Layer -->
+  <rect x="220" y="550" width="960" height="100" rx="10" fill="#f3e5f5" stroke="#9c27b0" stroke-width="2" opacity="0.3"/>
+  
+  <!-- EMQX MQTT Broker -->
+  <rect x="430" y="570" width="340" height="60" rx="8" fill="url(#purpleGrad)" filter="url(#shadow)"/>
+  <text x="600" y="593" font-family="Arial, sans-serif" font-size="13" font-weight="bold" fill="white" text-anchor="middle">EMQX MQTT Broker</text>
+  <text x="600" y="609" font-family="Arial, sans-serif" font-size="11" fill="white" text-anchor="middle">Port 1883</text>
+  <text x="600" y="622" font-family="Arial, sans-serif" font-size="11" fill="white" text-anchor="middle">Message Routing</text>
+  
+  <!-- Data Layer -->
+  <rect x="220" y="680" width="960" height="80" rx="10" fill="#e3f2fd" stroke="#2196f3" stroke-width="2" opacity="0.3"/>
+  
+  <!-- InfluxDB -->
+  <rect x="480" y="695" width="240" height="50" rx="8" fill="#0099ff" filter="url(#shadow)"/>
+  <text x="600" y="717" font-family="Arial, sans-serif" font-size="13" font-weight="bold" fill="white" text-anchor="middle">InfluxDB</text>
+  <text x="600" y="735" font-family="Arial, sans-serif" font-size="11" fill="white" text-anchor="middle">Port 8086 - Time-Series DB</text>
+  
+  <!-- Connection Lines -->
+  <!-- Python to MQTT -->
+  <path d="M 280,160 L 280,570" stroke="#3498db" stroke-width="2" fill="none" marker-end="url(#arrowblue)"/>
+  <text x="290" y="360" font-family="Arial, sans-serif" font-size="10" fill="#2c3e50">MQTT:1883</text>
+  
+  <!-- Python to InfluxDB -->
+  <path d="M 350,160 L 350,695" stroke="#3498db" stroke-width="2" fill="none" marker-end="url(#arrowblue)"/>
+  <text x="360" y="420" font-family="Arial, sans-serif" font-size="10" fill="#2c3e50">HTTP:8086</text>
+  
+  <!-- Web Browser to Nginx -->
+  <path d="M 1070,160 L 700,270" stroke="#3498db" stroke-width="2" fill="none" marker-end="url(#arrowblue)"/>
+  <text x="880" y="200" font-family="Arial, sans-serif" font-size="10" fill="#2c3e50">HTTP:8888</text>
+  
+  <!-- Nginx to Node-RED -->
+  <path d="M 640,330 L 600,400" stroke="#27ae60" stroke-width="2" fill="none" marker-end="url(#arrowgreen)"/>
+  <text x="550" y="365" font-family="Arial, sans-serif" font-size="10" fill="#2c3e50">Proxy</text>
+  
+  <!-- Nginx to Flask -->
+  <path d="M 760,330 L 820,400" stroke="#27ae60" stroke-width="2" fill="none" marker-end="url(#arrowgreen)"/>
+  <text x="790" y="365" font-family="Arial, sans-serif" font-size="10" fill="#2c3e50">Proxy</text>
+  
+  <!-- Nginx to Grafana -->
+  <path d="M 850,310 L 1050,400" stroke="#27ae60" stroke-width="2" fill="none" marker-end="url(#arrowgreen)"/>
+  <text x="950" y="350" font-family="Arial, sans-serif" font-size="10" fill="#2c3e50">Proxy</text>
+  
+  <!-- IoT Simulator to MQTT -->
+  <path d="M 350,460 L 490,590" stroke="#e91e63" stroke-width="2" fill="none" marker-end="url(#arrowpink)"/>
+  <text x="380" y="520" font-family="Arial, sans-serif" font-size="10" fill="#2c3e50">MQTT Publish</text>
+  
+  <!-- Node-RED to MQTT -->
+  <path d="M 600,460 L 600,570" stroke="#e91e63" stroke-width="2" fill="none" marker-end="url(#arrowpink)"/>
+  <text x="610" y="510" font-family="Arial, sans-serif" font-size="10" fill="#2c3e50">Pub/Sub</text>
+  
+  <!-- MQTT to InfluxDB -->
+  <path d="M 600,630 L 600,695" stroke="#9c27b0" stroke-width="2" fill="none" marker-end="url(#arrowpurple)"/>
+  <text x="610" y="660" font-family="Arial, sans-serif" font-size="10" fill="#2c3e50">Write Data</text>
+  
+  <!-- Flask to InfluxDB -->
+  <path d="M 850,460 L 680,695" stroke="#e91e63" stroke-width="2" fill="none" marker-end="url(#arrowpink)"/>
+  <text x="760" y="570" font-family="Arial, sans-serif" font-size="10" fill="#2c3e50">Read/Write</text>
+  
+  <!-- Grafana to InfluxDB -->
+  <path d="M 1080,460 L 680,695" stroke="#e91e63" stroke-width="2" fill="none" marker-end="url(#arrowpink)"/>
+  <text x="880" y="570" font-family="Arial, sans-serif" font-size="10" fill="#2c3e50">Query Data</text>
+  
+  <!-- Node-RED to InfluxDB -->
+  <path d="M 600,460 L 600,695" stroke="#e91e63" stroke-width="2" fill="none" stroke-dasharray="3,3"/>
+  
+  <!-- Arrow markers -->
+  <defs>
+    <marker id="arrowblue" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#3498db" />
+    </marker>
+    <marker id="arrowgreen" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#27ae60" />
+    </marker>
+    <marker id="arrowpink" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#e91e63" />
+    </marker>
+    <marker id="arrowpurple" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#9c27b0" />
+    </marker>
+  </defs>
+  
+  <!-- Port Labels (Additional Info) -->
+  <text x="240" y="485" font-family="Arial, sans-serif" font-size="9" fill="#7f8c8d">HTTP:18083</text>
+  <text x="490" y="485" font-family="Arial, sans-serif" font-size="9" fill="#7f8c8d">HTTP:1880</text>
+  <text x="740" y="485" font-family="Arial, sans-serif" font-size="9" fill="#7f8c8d">HTTP:5000</text>
+  <text x="990" y="485" font-family="Arial, sans-serif" font-size="9" fill="#7f8c8d">HTTP:3000</text>
+  
+</svg>
