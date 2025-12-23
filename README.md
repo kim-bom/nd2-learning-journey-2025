@@ -2,7 +2,7 @@
 
 ## October 4
 
--   System connection diagram (referenced image)
+-   System connection diagram ![Connection System Diagram](Diagram chart.png)
     
 -   In an industrial context, a **Gateway** refers to a **microcontroller**
     
@@ -354,7 +354,7 @@ Workflows are part of **AgentKit**, released by OpenAI in October 2025.
 
 -   **Hyper-V** is Microsoft’s virtualization technology that allows running multiple virtual machines on a single physical machine
     
--   Learned and explained system architecture referencing `iot_architecture_diagram.svg`
+-   Learned and explained system architecture referencing ![IoT Architecture Diagram](iot_architecture_diagram.svg)
     
 
 **Architecture overview**
